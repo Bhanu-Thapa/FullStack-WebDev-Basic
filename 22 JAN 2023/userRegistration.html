@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form method="get">
+      <fieldset>
+        <legend>User registration</legend>
+        <label for="username">Enter your username: </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          value="Bhanu"
+          readonly
+          disabled
+        />
+        <br />
+        <label for="useremail">Enter your email: </label>
+        <input
+          type="email"
+          name="useremail"
+          id="useremail"
+          placeholder="a@example.com"
+          autofocus
+        />
+        <br />
+        <label for="userpassword">Enter your password</label>
+        <input type="password" name="userpassword" id="userpassword" />
+        <br />
+        gender <br />
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <br />
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <br />
+        <label for="transgenders">transgenders</label>
+        <input
+          type="radio"
+          name="gender"
+          id="transgenders"
+          value="transgenderss"
+        />
+        <br />
+        <input type="number" min="0" max="7" />
+        <input type="submit" value="submit form" />
+      </fieldset>
+    </form>
+  </body>
+</html>
