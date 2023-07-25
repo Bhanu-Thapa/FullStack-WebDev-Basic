@@ -1,6 +1,12 @@
 body {
-  background-color: blue;
+  background-color: black;
 }
-p {
-  color: red;
+.heading {
+  background-color: blueviolet;
+  text-align: center;
+}
+.pra {
+  color: yellow;
+
+  border: 5px solid red;
 }
