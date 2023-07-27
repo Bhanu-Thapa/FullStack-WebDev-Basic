@@ -1,0 +1,41 @@
+* {
+  background-color: blueviolet;
+}
+
+/* DESCENDENT SELECTOR */
+
+main h1 {
+  color: wheat;
+}
+
+/* CHILD SELECTOR */
+
+h1 > p {
+  color: red;
+}
+
+/* ADJACENT SIBLING SELECTOR */
+
+section + h1 {
+  color: yellow;
+}
+
+/* GENERAL SIBLING SELECTOR */
+
+section ~ p {
+  color: green;
+}
+
+/* ATTRIBUTE SELECTORS */
+
+[target='_blank'] {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+/* [attribute~="value"] selector */
+
+[alt~='pic1'] {
+  color: wheat;
+  background-color: black;
+}
