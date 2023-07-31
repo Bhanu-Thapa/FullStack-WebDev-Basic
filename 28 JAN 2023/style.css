@@ -1,0 +1,53 @@
+body {
+  background-color: red;
+}
+
+div {
+  font-size: x-large;
+  text-align: center;
+}
+
+div::after {
+  content: 'Welcome to the Demo';
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: white;
+  }
+  div::after {
+    content: 'small';
+  }
+}
+@media (min-width: 400px) and (max-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+  div::after {
+    content: 'mid size device';
+  }
+}
+@media (min-width: 768px) and (max-width: 900px) {
+  body {
+    background-color: purple;
+  }
+  div::after {
+    content: 'mid screen';
+  }
+}
+/* @media (400px <= width <= 768px) {
+  body {
+    background-color: purple;
+  }
+  div::after {
+    content: 'mid screen';
+  }
+} */
+@media (min-width: 900px) {
+  body {
+    background-color: aquamarine;
+  }
+  div::after {
+    content: 'Woah its working';
+  }
+}
