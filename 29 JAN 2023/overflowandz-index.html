@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow and Z-index</title>
+    <style>
+      p {
+        width: 350px;
+        height: 350px;
+        border: 3px solid black;
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        overflow: auto; /* same as scroll but croll bar only display when want to scroll / browser compatibility*/
+      }
+
+      .box1 {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        z-index: -2;
+      }
+      .box2 {
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic officia
+      provident similique dolores ullam atque omnis. Natus, ullam fugit impedit,
+      ipsa dolorum dolorem commodi sunt tempore odio qui officiis facilis quo,
+      eligendi eius alias? Ex dolorum reprehenderit quos, mollitia nihil velit
+      sapiente numquam similique minus voluptates soluta ad autem commodi beatae
+      laborum veritatis. Dolores ad autem voluptate eaque in distinctio aut. Hic
+      aspernatur doloremque nulla laborum esse, exercitationem deleniti quisquam
+      eligendi provident doloribus modi molestias. Corrupti laudantium ut itaque
+      necessitatibus voluptas soluta vitae est vel praesentium odit eaque dicta
+      repellendus, magnam voluptates architecto recusandae explicabo eveniet
+      porro cumque aliquam tempora sit. Amet mollitia officia alias eligendi.
+      Illo deleniti ducimus, ea ratione unde maiores necessitatibus nam
+      accusamus fugit aliquid? Dolor ipsam, eius quam ut blanditiis accusantium,
+      distinctio, magni inventore nisi corrupti recusandae? Esse veniam rerum
+      placeat assumenda facere quaerat non praesentium, doloribus sapiente alias
+      ad, deleniti possimus nihil ipsum sunt optio tempora blanditiis voluptates
+      quas aut autem! Dolore, suscipit nesciunt quas voluptatum reprehenderit ea
+      cupiditate id nulla ipsam consequatur illum modi eveniet assumenda et quos
+      ducimus corporis dicta esse alias itaque ad aperiam? Mollitia ab officiis,
+      temporibus nulla optio natus expedita necessitatibus a inventore maiores
+      provident repudiandae est fugiat assumenda vero quas repellendus,
+      perspiciatis neque et voluptate laboriosam cum corporis enim. Veritatis
+      quo alias labore nostrum accusamus laborum hic, consequatur debitis sunt
+      nulla ea soluta ipsum, omnis at rem repellat ipsam molestias. Reiciendis
+      doloremque quasi non eaque facere, blanditiis quia nemo cupiditate dolorum
+      placeat reprehenderit eos obcaecati tenetur ipsa enim amet labore
+      aspernatur qui fugiat architecto vel, eius perferendis dolore minus!
+      Aliquid, saepe asperiores dolor ex corrupti impedit voluptatibus,
+      adipisci, ea esse nam cumque culpa fugit ratione nesciunt! Fuga, nobis
+      totam. Suscipit accusantium officia corporis delectus nobis impedit
+      facilis debitis mollitia vitae, esse itaque rem quis consequatur labore
+      eaque maxime molestias?
+    </p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
