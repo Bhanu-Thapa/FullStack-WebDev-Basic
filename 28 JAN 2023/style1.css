@@ -1,0 +1,58 @@
+div {
+  font-size: x-large;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: red;
+    text-align: center;
+  }
+
+  div::after {
+    content: 'This is mobile compatible';
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: aquamarine;
+    text-align: center;
+  }
+
+  div::after {
+    content: 'Portrait tablets and big phones';
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-color: blue;
+    text-align: center;
+  }
+
+  div::after {
+    content: 'tablets';
+  }
+}
+
+@media (992px <= width <= 1200px) {
+  /* this format didn't show in inspect */
+  body {
+    background-color: yellowgreen;
+    text-align: center;
+  }
+
+  div::after {
+    content: 'laptops';
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: violet;
+    text-align: center;
+  }
+
+  div::after {
+    content: 'Larger Screens';
+  }
+}
