@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      .cont {
+        display: flex;
+        height: 300px;
+
+        border: 3px solid black;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* flex-flow: column wrap; */ /* combo of 2 flex direction felx-wrap */
+        /* justify-content: center; */
+        /* align-items: center; */
+        align-content: baseline;
+        /* gap: 100px; */
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+
+      .box1 {
+        background: red;
+        /* order: 2; */
+        /* flex-grow: 10; */
+        /* flex :- combo of 3 grow shrink basis  */
+        flex: 1 0 400px;
+      }
+      .box2 {
+        background: blue;
+        /* order: 1; */
+        /* flex-grow: 2; */
+        /* flex-shrink: 2; */
+        /* flex-basis: 200px; */
+        align-self: self-end;
+      }
+      .box3 {
+        background: green;
+        /* order: 0; */
+        /* flex-grow: 3; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+    </div>
+  </body>
+</html>
