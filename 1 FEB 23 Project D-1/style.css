@@ -137,10 +137,17 @@ footer ul {
   display: flex;
   list-style: none;
   align-items: center;
+<<<<<<< HEAD
   height: 35px;
+=======
+>>>>>>> 23fbc5021a2672e20fc71ac08b151493a5bdc255
   gap: 40px;
 }
 
 i {
+<<<<<<< HEAD
   font-size: 30px;
+=======
+  font-size: 35px;
+>>>>>>> 23fbc5021a2672e20fc71ac08b151493a5bdc255
 }
