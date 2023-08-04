@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units</title>
+    <style>
+      html {
+        font-size: 64%;
+      }
+      section {
+        border: 1px solid red;
+        /* px type is absolute */
+        /* vw,vh, percentage type relative */
+        /* width: 50vw; */
+        /* height: 100vh; */
+        /* width: 50%; */
+        /* font-size: 16px; */
+      }
+      main {
+        border: 1px dashed black;
+        /* width: 50vw; */
+        /* height: 50vh; */
+        /* width: 50%; */
+        /* em take parent value and multiply  by default 1em = 16px*/
+        /* font-size: 4em; */
+        /* rem (root) takes root value - html main value by default 1rem = 16px  */
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <main>Hello world</main>
+    </section>
+  </body>
+</html>
