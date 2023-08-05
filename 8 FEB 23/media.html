@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+    <style>
+      /* screen size:
+      larger screen: 1440px
+      normal screen: 1024px
+      tablet screen: 768px
+      mobile screen 425px
+      */
+
+      section {
+        display: flex;
+      }
+
+      .box {
+        height: 350px;
+        width: 350px;
+        border: 1px solid black;
+      }
+
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        background-color: green;
+      }
+      .box3 {
+        background-color: blue;
+      }
+
+      @media screen and (max-width: 768px) {
+        section {
+          display: flex;
+          flex-direction: column;
+        }
+        .box {
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+    </section>
+  </body>
+</html>
